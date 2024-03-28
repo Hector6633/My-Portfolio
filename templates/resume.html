@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <title>My Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="{% static "images/logo.png" %}">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="HTML5 website template">
+  <meta name="keywords" content="global, template, html, sass, jquery">
+  <meta name="author" content="Bucky Maler">
+  <link rel="stylesheet" href="{% static "css/main.css" %}">
+</head>
+<body>
+
+<!-- notification for small viewports and landscape oriented smartphones -->
+<div class="device-notification">
+  <a class="device-notification--logo" href="#0">
+    <img src="{% static "images/logo.png" %}" alt="Global">
+    <p>My Portfolio</p>
+  </a>
+  <p class="device-notification--message">Global has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
+</div>
+
+<div class="perspective effect-rotate-left">
+  <div class="container"><div class="outer-nav--return"></div>
+    <div id="viewport" class="l-viewport">
+      <div class="l-wrapper">
+        <header class="header">
+          <a class="header--logo" href="#0">
+            <img src="{% static "images/logo.png" %}" alt="Global">
+            <p>My Portfolio</p>
+          </a>
+          <button class="header--cta cta">Hire Me</button>
+          <div class="header--nav-toggle">
+            <span></span>
+          </div>
+        </header>
+        <nav class="l-side-nav">
+          <ul class="side-nav">
+          </ul>
+        </nav>
+        <ul class="l-main-content main-content">
+          <li class="l-section section section--is-active">
+            <div class="intro">
+                <h1>Resume</h1>
+                {% comment %} <embed src="{% static "pdf/rajeev cv overleaf.pdf" %}" width="800px" height="2100px" /> {% endcomment %}
+                
+                <iframe src="{% static "pdf/rajeev cv overleaf.pdf" %}" style="width: 100%;height: 100%;border: none;"></iframe>
+            </div>
+            </div>
+          </li>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="{% static "js/vendor/jquery-2.2.4.min.js" %}"><\/script>')</script>
+<script src="{% static "js/functions-min.js" %}"></script>
+</body>
+</html>

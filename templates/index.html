@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <title>My Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="{% static "images/logo.png" %}">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="HTML5 website template">
+  <meta name="keywords" content="global, template, html, sass, jquery">
+  <meta name="author" content="Bucky Maler">
+  <link rel="stylesheet" href="{% static "css/main.css" %}">
+</head>
+<body>
+
+<!-- notification for small viewports and landscape oriented smartphones -->
+<div class="device-notification">
+  <a class="device-notification--logo" href="#0">
+    <img src="{% static "images/logo.png" %}" alt="Global">
+    <p>My Portfolio</p>
+  </a>
+  <p class="device-notification--message">Global has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
+</div>
+
+<div class="perspective effect-rotate-left">
+  <div class="container"><div class="outer-nav--return"></div>
+    <div id="viewport" class="l-viewport">
+      <div class="l-wrapper">
+        <header class="header">
+          <a class="header--logo" href="#0">
+            <img src="{% static "images/logo.png" %}" alt="Global">
+            <p>My Portfolio</p>
+          </a>
+          <button class="header--cta cta">Hire Me</button>
+          <div class="header--nav-toggle">
+            <span></span>
+          </div>
+        </header>
+        <nav class="l-side-nav">
+          <ul class="side-nav">
+            <li class="is-active"><span>Home</span></li>
+            <li><span>My Projects</span></li>
+            <li><span>My Education</span></li>
+            <li><span>My Skills</span></li>
+            <li><span>Social Media</span></li>
+            <li><span>Contact Me</span></li>
+          </ul>
+        </nav>
+        <ul class="l-main-content main-content">
+          <li class="l-section section section--is-active">
+            <div class="intro">
+              <div class="intro--banner">
+                <h1>Hey,I am<br>Rajeev,<br>Django Developer</h1>
+                <button class="cta">Hire Me
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                  <span class="btn-background"></span>
+                </button>
+                <img src="{% static "images/introduction-visual.png" %}" alt="Welcome">
+              </div>
+              <h1>About Me</h1>
+              <div class="intro--options">
+                  <h2>Self taught python Django developer based in online platforms .Curious to learn more about scalable distributed system, loves problem solving and self development and help me achieve personal as well as organizational goals.</h2>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="work">
+              <h1>Projects</h1>
+              <div class="work--lockup">
+                <ul class="slider">
+                  <li class="slider--item slider--item-left">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <a href="https://photographystudio333.pythonanywhere.com"><img src="{% static "images/photography (Custom).png" %}" alt="Victory"></a>
+                      </div>
+                      <p class="slider--item-title">Photography</p>
+                      <p class="slider--item-description">Photography Studio: is a Responsive and User-Friendly web application designed to simplify the process of booking photographers and videographers for various events.It brings together professionals in photography and videography from different genres under one platform.</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-center">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <a href="https://github.com/Hector6633/E-cart"><img src="{% static "images/redstore (Custom).png" %}" alt="Metiew and Smith"></a>
+                      </div>
+                      <p class="slider--item-title">Redstore</p>
+                      <p class="slider--item-description">A Responsive and User-Friendly E-Commerce Web Application.It allows users to browse, search and purchase products from various categories.</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <a href="https://github.com/Hector6633/Froggy-Aventura"><img src="{% static "images/froggy.png" %}" alt="Alex Nowak"></a>
+                      </div>
+                      <p class="slider--item-title">Froggy aventure</p>
+                      <p class="slider--item-description">Froggy Aventura is a 2D adventure game that recreates the classic gameplay of the mario game. The game is designed for casual gamers who enjoy retro-style games on pc and mobile devices.It was made using Unity Engine and it is
+                        a Multiplatform game. This game is
+                        supported in various gaming consoles
+                        like XBOX,Ps5,Nintendo Switch.</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="{% static "images/electricox (Custom).png" %}" alt="Alex Nowak">
+                      </div>
+                      <p class="slider--item-title">Electricox</p>
+                      <p class="slider--item-description">A responsive web application to find electric
+                        charging station at nearest bunk.
+                        This project contains four modules such
+                        as, Admin,User,Owner,and Stationstaff.</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <a href=""><img src="{% static "images/gamepad (Custom).png" %}" alt="Alex Nowak"></a>
+                      </div>
+                      <p class="slider--item-title">GameBook</p>
+                      <p class="slider--item-description">It is a web application to find your pc or
+                        laptops to supports AAA-games.we can search any games, features,
+                        specifications and purchase latest games in
+                        gamebook stores.</p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="slider--prev">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
+                </div>
+                <div class="slider--next">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="about">
+              <center><h1>Education</h1></center>
+              <div class="about--banner">
+                <h2>We<br>believe in<br>passionate<br>people</h2>
+                <a href="#0">Career
+                  <span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                    </g>
+                    </svg>
+                  </span>
+                </a>
+                <img src="{% static "images/about-visual.png" %}" alt="About Us">
+              </div>
+              <div class="about--options">
+                <a href="{% url "education" %}">
+                  <h3>VIEW MY EDUCATION</h3>
+                </a>
+                <a href="{% url "resume" %}">
+                  <h3>MY RESUME</h3>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="work">
+              <h1>Skills</h1>
+              <div class="work--lockup">
+                <ul class="slider">
+                  <li class="slider--item slider--item-left">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <a href="https://photographystudio333.pythonanywhere.com"><img src="{% static "images/python (Custom).png" %}" alt="Victory"></a>
+                      </div>
+                      <h2 class="slider--item-title">python</h2>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-center">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="{% static "images/java (Custom).jpeg" %}" alt="Metiew and Smith">
+                      </div>
+                      <h2 class="slider--item-title">java</h2>
+                      
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="{% static "images/c++ (Custom).png" %}" alt="c++">
+                      </div>
+                      <p class="slider--item-title">c++</p>
+              
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="{% static "images/c (Custom).jpg" %}" alt="Alex Nowak">
+                      </div>
+                      <h2 class="slider--item-title">C</h2>
+                      
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="{% static "images/c# (Custom).jpg" %}" alt="Alex Nowak">
+                      </div>
+                      <h2 class="slider--item-title">C#</h2>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="{% static "images/html (Custom).jpg" %}" alt="Alex Nowak">
+                      </div>
+                      <h2 class="slider--item-title">HTML</h2>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="{% static "images/css3 (Custom).jpeg" %}" alt="Alex Nowak">
+                      </div>
+                      <h2 class="slider--item-title">CSS</h2>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="{% static "images/js (Custom).jpg" %}" alt="Alex Nowak">
+                      </div>
+                      <h2 class="slider--item-title">JAVASCRIPT</h2>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="{% static "images/sql (Custom).jpeg" %}" alt="Alex Nowak">
+                      </div>
+                      <h2 class="slider--item-title">SQL</h2>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="{% static "images/bootstrap1 (Custom).jpg" %}" alt="Alex Nowak">
+                      </div>
+                      <h2 class="slider--item-title">BOOTSTRAP</h2>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="{% static "images/django (Custom).jpg" %}" alt="Alex Nowak">
+                      </div>
+                      <h2 class="slider--item-title">DJANGO</h2>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="{% static "images/react (Custom).jpg" %}" alt="Alex Nowak">
+                      </div>
+                      <h2 class="slider--item-title">REACT</h2>
+                    </a>
+                  </li>
+                </ul>
+                <div class="slider--prev">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
+                </div>
+                <div class="slider--next">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          <li class="l-section section">
+            <div class="work">
+              <h1>Social Media Accounts</h1>
+              <div class="work--lockup">
+                <ul class="slider">
+                  <li class="slider--item slider--item-left">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <a href="https://photographystudio333.pythonanywhere.com"><img src="{% static "images/git (Custom).jpg" %}" alt="Victory"></a>
+                      </div>
+                      <p class="slider--item-title">git hub</p>
+                      <a href="https://github.com/Hector6633"><p class="slider--item-description">github.com/Hector6633</p></a>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-center">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="{% static "images/linkedin.jpg" %}" alt="Metiew and Smith">
+                      </div>
+                      <p class="slider--item-title">linkedin</p>
+                      <a href="https://www.linkedin.com/rajeev-lakshmanan"><p class="slider--item-description">https://www.linkedin.com/rajeev-lakshmanan</p></a>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="{% static "images/gmail (Custom).jpeg" %}" alt="Alex Nowak">
+                      </div>
+                      <p class="slider--item-title">Gmail</p>
+                      <a href="https://mail.google.com/"><p class="slider--item-description">rajeevlakshmanan003@gmail.com</p></a>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="{% static "images/stack overflow.jpg" %}" alt="Alex Nowak">
+                      </div>
+                      <p class="slider--item-title">stack overflow</p>
+                      <a href="https://stackoverflow.com/users/22180248/rajeev-lakshmanan"><p class="slider--item-description">https://stackoverflow.com/users/22180248/rajeev-lakshmanan</p></a>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="{% static "images/LeetCode (Custom).png" %}" alt="Alex Nowak">
+                      </div>
+                      <p class="slider--item-title">leetcode</p>
+                      <a href="https://leetcode.com/rajeevlakshmanan333/"><p class="slider--item-description">https://leetcode.com/rajeevlakshmanan333/</p></a>
+                    </a>
+                  </li>
+                </ul>
+                <div class="slider--prev">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
+                </div>
+                <div class="slider--next">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <li class="l-section section">
+              <div class="hire">
+                <center><h1>Contact Me</h1></center>
+                <!-- checkout formspree.io for easy form setup -->
+                <form class="work-request">
+                  <div class="work-request--options">
+                    <span class="options-a">
+                      <input id="opt-1" type="checkbox" value="app design">
+                    <label class="cta" for="opt-1">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Phone Number
+                      7012814969
+                    </label>
+                    <input id="opt-2" type="checkbox" value="graphic design">
+                    <label class="cta" for="opt-2">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Gmail  rajeevlakshmanan003
+                      @gmail.com
+                    </label>
+                    <input id="opt-3" type="checkbox" value="motion design">
+                    <label class="cta" for="opt-3">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Address
+                      Kerala,Alappuzha
+                    </label>
+                    </span>
+                  </div>
+                  <script src="//my.visme.co/visme-embed.js"></script><div class="visme_d" data-title="Creative Desktop Wallpaper" data-url="eprzx6x1-new-project" data-w="2560" data-full-h="false" data-h="1440" data-domain="my"></div><p style="width:142px !important;border-radius:3px !important;padding:3px !important;font-size:12px !important;font-family:Arial, sans-serif !important;color:#314152 !important;white-space:nowrap !important"><a href="https://www.visme.co/?vc=Made-With-Visme&amp;utm_medium=Embed" target="_blank" rel="noreferrer" style="font-weight:600 !important;text-decoration:none !important;font-size:12px !important;font-family:Arial, sans-serif !important;color:#314152 !important;white-space:nowrap !important"></a></p>
+                </form>
+                <br>
+                <center><h2>Thank You For Scrolling</h2></center>
+              </div>
+            </li>
+        </ul>
+        </ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <ul class="outer-nav">
+    <li class="is-active">Home</li>
+    <li>My Projects</li>
+    <li>My Education</li>
+    <li>My Skills</li>
+    <li>Social Accounts</li>
+    <li>Contact Me</li>
+  </ul>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="{% static "js/vendor/jquery-2.2.4.min.js" %}"><\/script>')</script>
+<script src="{% static "js/functions-min.js" %}"></script>
+</body>
+</html>
